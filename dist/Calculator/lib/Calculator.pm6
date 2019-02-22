@@ -1,8 +1,8 @@
 use v6.c;
 
 class Calculator:ver<0.0.1> {
-    has $.x is required;
-    has $.y is required;
+    has Int $.x is required;
+    has Int $.y is required;
 
     method add() {
         return self.x + self.y;
