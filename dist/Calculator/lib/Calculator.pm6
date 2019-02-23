@@ -1,8 +1,12 @@
 use v6.c;
 
 class Calculator:ver<0.0.1> {
-    has Int $.x is required;
-    has Int $.y is required;
+    has Int $.x is required where * > 0;
+    has Int $.y is required where * > 0;
+
+    method TWEAK(:$!x!, :$!y!) {
+        die 'ERROR: x should be > y.' unless $!x > $!y;
+    };
 
     method add() {
         return self.x + self.y;
