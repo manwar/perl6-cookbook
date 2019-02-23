@@ -30,19 +30,26 @@ class Calculator:ver<0.0.1> {
 
 =head1 NAME
 
-Calculator - blah blah blah
+Calculator - My first Perl6 sample distriubtion.
 
 =head1 SYNOPSIS
 
 =begin code :lang<perl6>
 
 use Calculator;
+my $c = Calculator->new( :x<10>, :y<5> );
+
+say $c->add;
+say $c->substract;
+say $c->multiply;
+say $c->divide;
 
 =end code
 
 =head1 DESCRIPTION
 
-Calculator is ...
+Calculator is a very basic learning distribution. I found it easy to
+experiment with Perl6.
 
 =head1 AUTHOR
 
